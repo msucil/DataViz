@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Viz</title>
+    <style>
+
+        #barchart div {
+            font: 10px sans-serif;
+            background-color: steelblue;
+            text-align: right;
+            padding: 3px;
+            margin: 1px;
+            color: white;
+        }
+
+        #svgChart rect, #charFreq rect {
+            fill: steelblue;
+        }
+
+        #svgChart text, #charFreq text {
+            fill: black;
+            font: 10px sans-serif;
+            text-anchor: end;
+        }
+
+        .axis text {
+            font: 10px sans-serif;
+        }
+
+        .axis path,
+        .axis line {
+            fill: none;
+            stroke: #000;
+            shape-rendering: crispEdges;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <h4>Bar Chart</h4>
+        <h5>Using Div</h5>
+        <div id="barchart"></div>
+        <hr>
+        <h5>Using SVG</h5>
+        <svg id="svgChart"></svg>
+        <hr>
+        <h5>Character Frequency</h5>
+        <svg id="charFreq"></svg>
+    </section>
+</body>
+<script type="text/javascript" src="node_modules/d3/dist/d3.js"></script>
+<script type="text/javascript" src="viz/barchart.js"></script>
+</html>
