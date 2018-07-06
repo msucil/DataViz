@@ -1,0 +1,14 @@
+{
+  "name": "DataViz",
+  "version": "1.0.0",
+  "description": "Data Visualization Using D3",
+  "main": "index.js",
+  "repository": "git@github.com:msucil/DataViz.git",
+  "author": "Sushil Ale",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "d3": "^5.5.0",
+    "lodash": "^4.17.10"
+  }
+}
